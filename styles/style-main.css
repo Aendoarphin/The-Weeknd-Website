@@ -1,0 +1,195 @@
+*{
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.bg-image{
+    background-image: url('/images/theweeknd-bg.jpg');
+    background-size: 100%;
+    min-width: none;
+    background-repeat: no-repeat;
+}
+
+@font-face{
+    font-family: Simplement;
+    src: local('Simplement.otf')
+}
+
+@font-face{
+    font-family: Titania-Regular;
+    src: local('Titania-Regular.ttf')
+}
+
+#the-weeknd{
+    font-family: Simplement;
+    font-size: 1cm;
+    color: white;
+    text-shadow: -2px 5px 5px #000000;
+    white-space: nowrap;
+    animation: fadeIn 6s;
+    animation-fill-mode: backwards;
+    animation-delay: .5s;
+    margin-left: 20px;
+    margin-bottom: -50px;
+    text-align: center;
+
+}
+
+#dawn-fm{
+    font-family: Titania;
+    font-size: 2in;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px 5px 5px #000000;
+    white-space: nowrap;
+    animation: fadeIn 6s;
+    animation-fill-mode: backwards;
+    animation-delay: .7s;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+.fade-out{
+    animation: fadeOut 6s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    animation: fadeIn 6s;
+}
+
+div>p{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 1cm;
+    font-size: 1cm;
+    text-shadow: 2px 2px 5px black;
+    margin-top: 0px;
+    animation-delay: 12s;
+    animation: fadeIn 12s;
+}
+
+.nav-style{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.401);
+    padding-bottom: 12px;
+    margin-top: 1in;
+    height: 18vh;
+    animation-delay: 6s;
+    animation: fadeIn 6s;
+    
+}
+
+.nav-style a{
+    color: black;
+    font-family: Simplement;
+    font-size: 35px;
+    padding-inline: 50px;
+    position:sticky
+}
+
+.effect:hover{
+    color: white;
+    animation: fadeIn 1s;
+    display: inline;
+    transition: .3s ease;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.effect:not(:hover){
+    color: black;
+    animation: fadeIn 1s;
+    transition: .3s ease;
+}
+
+.container{
+    position: center;
+    margin-top: 25%;
+    margin-left: 43.5%;
+}
+
+.container button{
+    background-color: black;
+    color: white;
+    outline: white solid 2px;
+}
+
+#musicbtn-container{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#play-btn{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    animation: fadeIn 6s;
+    animation-fill-mode: backwards;
+    animation-delay: .5s;
+    font-family: Simplement;
+}
+
+#pause-btn{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    animation: fadeIn 6s;
+    animation-fill-mode: backwards;
+    animation-delay: .5s;
+    font-family: Simplement;
+}
+
+
+#play-btn:hover{
+    text-decoration-line: underline;
+}
+
+#pause-btn:hover{
+    text-decoration-line: underline;
+}
+
+#support{
+    color: white;
+    text-align: center;
+    text-decoration-line: none;
+    font-family: Simplement;
+    animation: fadeIn 6s;
+    animation-fill-mode: backwards;
+    animation-delay: .5s;
+}
+
+#support:hover{
+    text-decoration-line: underline;
+}
+
+#supportdiv{
+    text-align: center;
+}

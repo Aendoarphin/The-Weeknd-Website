@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style-form.css">
+    <title>Feedback</title>
+</head>
+<body class="bg-image">
+    <div class="form-size">
+        <div class="alertBox" id="alertBox">
+            <p>Thank you for the feedback! We'll contact you soon.</p>
+        </div>
+        <div class="alertBox-error" id="alertBox-error">
+            <p>Oops, something went wrong.</p>
+        </div>
+        <form id="form">
+            <h1 class="titania-font center-align">Leave Us A Response</h1>
+            <p class="center-align">Let us know about your experience. Any feedback will help!</p>
+            <fieldset>
+                <legend><h3>Feedback</h3></legend>
+                <input type="checkbox" name="feedback1" id="problem">
+                <label for="problem">I encountered a problem with the webpage</label>
+                <br>
+                <input type="checkbox" name="feedback2" id="suggestion">
+                <label for="suggestion">I have a suggestion(s) for improvements</label>
+                <br>
+                <input type="checkbox" name="feedback3" id="other">
+                <label for="other">Other</label>
+                <br>
+                <textarea name="comments" id="comments" cols="30" rows="10" spellcheck="true" placeholder="Describe your situation..."></textarea>
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend><h3>Contact Info</h3></legend>
+                <div>
+                    <label for="email">Email Address*</label> <br>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone</label> <br>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone">
+                </div>
+                <br>
+                <div>
+                    <button type="reset">Clear</button>
+                </div>
+                <h3>How do you prefer to be contacted?</h3>
+                <div>
+                    <input type="radio" id="phone-pref" name="pref-type" value="phone">
+                    <label for="phone-pref">Phone</label> |
+                    <input type="radio" id="text-pref" name="pref-type" value="text"> 
+                    <label for="text-pref">Text</label> |
+                    <input type="radio" id="email-pref" name="pref-type" value="email">
+                    <label for="email-pref">Email</label>
+                    <p id="required-field"><i>*&nbspRequired Field</i></p>
+                </div>
+                <div>
+                    <input id="submitButton" type="button" value="Submit" onclick="addInfo()">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <script type="module" src="form.js"></script>
+</body>
+</html>
